@@ -13,5 +13,7 @@ public class ConsoleConfig {
         actionMap.put(2, new ShowProductAction());
         actionMap.put(3, new RemoveProductAction());
         actionMap.put(4, new UpdateProductAction());
+        actionMap.put(5, new UserLogInAction());
+        actionMap.put(6, new CreateNewUserAccount());
     }
 }

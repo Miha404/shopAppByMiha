@@ -13,6 +13,7 @@ public class Aplication {
     }
 
     private void run() {
+        System.out.println("Для начала Вам нужно зарегистрироваться или зайти в свой аккаунт.");
         while (true) {
             Action action = getAction();
             action.execute();
