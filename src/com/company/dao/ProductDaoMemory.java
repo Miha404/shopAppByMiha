@@ -38,7 +38,7 @@ public class ProductDaoMemory implements ProductDao {
     }
 
     @Override
-    public void update(Product product) {
+    public void update(int indexToUpdate, Product product) {
         int index = getProductList().indexOf(product);
         if (index != -1){
             getProductList().set(index, product);

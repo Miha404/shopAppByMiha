@@ -9,6 +9,6 @@ public interface ProductDao {
     void add(Product product) throws DuplicateProductException;
     List<Product> get();
     void remove(Product product);
-    void update(Product product);
+    void update(int index, Product product);
 
 }

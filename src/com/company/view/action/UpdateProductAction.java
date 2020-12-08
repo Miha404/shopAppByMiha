@@ -14,10 +14,10 @@ public class UpdateProductAction extends BaseAction implements Action {
         String name = Input.getString("Введите название продукта");
         int updateProductIndex = getUpdateProductIndex(name);
         if (updateProductIndex != -1){
-            String newName = Input.getString("Введите название продукта");
+            String newName = Input.getString("Введите новое название продукта");
             double newPrice = Input.getDouble("Введите цену продукта");
             Product updateProduct = new Product(productController.get().get(updateProductIndex).getId(), newName, newPrice);
-            productController.get().set(updateProductIndex, updateProduct);
+            productController.update(updateProductIndex, updateProduct);
         }else {
             System.out.println("Такой товар не найден");
         }

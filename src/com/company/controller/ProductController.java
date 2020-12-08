@@ -22,7 +22,7 @@ public class ProductController {
         productDao.remove(product);
     }
 
-    public void update(Product product) {
-        productDao.update(product);
+    public void update(int indexUpdate, Product product) {
+        productDao.update(indexUpdate, product);
     }
 }
